@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let totalString = "";
+
+        /* Задание.
+        Дописывайте в строку totalString с помощью цикла и конкатенации строки,
+        так, чтобы итоговое значение в totalString получилось: слово1слово2слово3
+        */
+        const objectWord = [
+            'Слово1',
+            'Слово2',
+            'Слово3',
+        ];
+
+        
+        // console.log(objectWord.join());
+
+        for (let elem in objectWord) {
+            totalString = objectWord.join();
+        }
+
+        // totalString = objectWord;
+        // должно вывести:
+        // слово1слово2слово3
+        console.log(totalString);
+    </script>
+</body>
+</html>
